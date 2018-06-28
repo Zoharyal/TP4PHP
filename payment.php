@@ -59,25 +59,25 @@ $prixTTC = $prixp1 + $prixp2 + $prixp3 + $prixs1 + $prixs2 + $prixs3;
     <div id="facture">
         <h3>Facture</h3>
         <?php if($_SESSION['produit1'] != 0) { ?>
-            <p>Produit 1 : <p> <?php echo $_SESSION['produit1']; echo ' Total: '; echo $prixp1 ?> 
+            <p>Produit 1 : <p> <?php echo $_SESSION['produit1']; echo ' Total: '; echo $prixp1; echo '€'?> 
         <?php } ?>
         <?php if($_SESSION['produit2'] != 0) { ?>
-            <p>Produit 2 : <p> <?php echo $_SESSION['produit2'];  echo ' Total: '; echo $prixp2 ?> 
+            <p>Produit 2 : <p> <?php echo $_SESSION['produit2'];  echo ' Total: '; echo $prixp2; echo '€' ?> 
         <?php } ?>
         <?php if($_SESSION['produit3'] != 0) { ?>
-            <p>Produit 3 : <p> <?php echo $_SESSION['produit3']; echo ' Total: '; echo $prixp3 ?> 
+            <p>Produit 3 : <p> <?php echo $_SESSION['produit3']; echo ' Total: '; echo $prixp3; echo '€' ?> 
         <?php } ?>
         <?php if($_SESSION['service1'] != 0) { ?>
-            <p>Service 1 : <p> <?php echo $_SESSION['service1']; echo ' Total: '; echo $prixs1 ?> 
+            <p>Service 1 : <p> <?php echo $_SESSION['service1']; echo ' Total: '; echo $prixs1; echo '€' ?> 
         <?php } ?>
         <?php if($_SESSION['service2'] != 0) { ?>
-            <p>Service 2 : <p> <?php echo $_SESSION['service2']; echo ' Total: '; echo $prixs2 ?> 
+            <p>Service 2 : <p> <?php echo $_SESSION['service2']; echo ' Total: '; echo $prixs2; echo '€'?> 
         <?php } ?>
         <?php if($_SESSION['service3'] != 0) { ?>
-            <p>Service 3 : <p> <?php echo $_SESSION['service3']; echo ' Total: '; echo $prixs3 ?> 
+            <p>Service 3 : <p> <?php echo $_SESSION['service3']; echo ' Total: '; echo $prixs3; echo '€'?> 
         <?php } ?>
 
-        <h3>Total : <?php echo $prixTTC ?></h3>
+        <h3>Total : <?php echo $prixTTC; echo '€'?></h3>
         <a href="end.php">Payer</a>
     </div>
 </body>
