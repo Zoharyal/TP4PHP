@@ -17,6 +17,5 @@ $_SESSION['Spassword'] = $_POST['Spassword'];
         $_SESSION['login'] = false;
         header('Location: connexion.php');
     }
-
-
+    
 ?>

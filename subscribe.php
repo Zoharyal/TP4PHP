@@ -13,7 +13,7 @@ session_start();
 </head>
 <body>
     <div id="connexion">
-        <form action="log.php" method="POST">
+        <form action="sub.php" method="POST">
             <label for="name">Name</label>
             <input type="text" name="Sname">
             <label for="email">Adresse email</label>

@@ -20,7 +20,11 @@ session_start();
             <a href="connexion.php">Connexion</a>
             <a href="subscribe.php">Inscription</a>
         <?php } else { ?>
-            <h2>Welcome User : <?php echo $_SESSION['email']; ?> </h2>
+            <h2>Welcome User : <?php if(isset($_SESSION['Semail'])) {
+                echo $_SESSION['Semail'];
+            } else {
+                echo $_SESSION['email'];
+            }; ?> </h2>
         <?php } ?>
     </header>
     <form action="order.php" method="POST">
